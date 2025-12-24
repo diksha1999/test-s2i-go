@@ -1,0 +1,11 @@
+# go.sum
+# This file contains checksums for Go module dependencies
+# Since this basic application has no external dependencies,
+# this file is empty or can be omitted.
+#
+# When you add dependencies using 'go get', this file will be
+# automatically populated with checksums for those dependencies.
+#
+# Example entries would look like:
+# github.com/gin-gonic/gin v1.9.1 h1:4idEAncQnU5cB7BeOkPtxjfCSye0AAm1R0RVIqJ+Jmg=
+# github.com/gin-gonic/gin v1.9.1/go.mod h1:hPrL7YrpYKXt5YId3A/Tnip5kqbEAP+KLuI3SUcPTeU=
