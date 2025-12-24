@@ -1,0 +1,49 @@
+# S2I Environment Configuration for Go Applications
+# These environment variables are used during the S2I build process
+
+# Enable Go modules (recommended)
+GO111MODULE=on
+
+# Set Go proxy for faster dependency downloads (optional)
+# GOPROXY=https://proxy.golang.org,direct
+
+# Set Go sum database for module verification (optional)
+# GOSUMDB=sum.golang.org
+
+# Disable CGO if you don't need C bindings (helps with cross-platform builds)
+# CGO_ENABLED=0
+
+# Set the Go version (if the builder image supports multiple versions)
+# This is usually not needed as the builder image has a default version
+# GOVERSION=1.21
+
+# Build flags for go build command (optional)
+# GO_BUILD_FLAGS=-v -mod=readonly
+
+# Application environment variable
+ENVIRONMENT=production
+
+# Custom port (if different from default 8080)
+# PORT=8080
+
+# Additional build-time environment variables
+# Add any custom environment variables your application needs during build
+# Example:
+# APP_VERSION=1.0.0
+# BUILD_DATE=$(date +%Y-%m-%d)
+```
+
+## 6. README.md ✅ (Already visible above)
+
+---
+
+## 📦 Complete File Structure:
+```
+your-go-repo/
+├── main.go              # HTTP server application
+├── go.mod               # Go module definition
+├── go.sum               # Dependencies checksums (can be empty initially)
+├── .gitignore           # Git ignore rules
+├── .s2i/
+│   └── environment      # S2I build configuration
+└── README.md            # Project documentation
